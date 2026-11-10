@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="K-Beauty Space — простір корейського догляду за шкірою. Обирай косметику для щоденної рутини.">
+    <title>K-Beauty Space — корейський догляд</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="announcement">Твій простір корейського догляду · Доставка Новою поштою по Україні</div>
+
+    <header class="site-header">
+        <a class="brand" href="#">
+            <span class="brand-mark">K</span>
+            <span>K-BEAUTY <em>SPACE</em><small>YOUR SKIN, YOUR SPACE</small></span>
+        </a>
+        <button class="menu-toggle" aria-label="Відкрити меню">☰</button>
+        <nav>
+            <a href="#catalog">Каталог</a>
+            <a href="#about">Про нас</a>
+            <a href="#care">Підбір догляду</a>
+            <a href="#contacts">Контакти</a>
+        </nav>
+        <button class="cart-button" id="openCart">Кошик <span id="cartCount">0</span></button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">KOREAN SKINCARE · CURATED WITH CARE</p>
+                <h1>Твоя шкіра.<br><i>Твій простір</i><br>турботи.</h1>
+                <p class="hero-text">Відкрий світ корейського догляду — від делікатного очищення до сяйва здорової шкіри.</p>
+                <a class="button button-dark" href="#catalog">Обрати догляд <span>↗</span></a>
+                <div class="hero-note"><span>✳</span> Дбайливо підібрана косметика для щоденних ритуалів</div>
+            </div>
+            <div class="hero-art">
+                <div class="hero-orbit"></div>
+                <div class="hero-photo">
+                    <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=1200" alt="Естетична композиція косметики для догляду">
+                </div>
+                <div class="floating-tag">SKINCARE<br><b>RITUALS</b></div>
+                <div class="hero-stamp">GLOW<br>AT YOUR<br>OWN PACE</div>
+            </div>
+        </section>
+
+        <section class="trust-strip">
+            <div><b>01</b><span>Догляд на кожен день</span></div>
+            <div><b>02</b><span>Популярні K-beauty бренди</span></div>
+            <div><b>03</b><span>Доставка Новою поштою</span></div>
+            <div><b>04</b><span>Підтримка у виборі</span></div>
+        </section>
+
+        <section class="section" id="catalog">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">ЗНАЙДИ СВОЄ</p>
+                    <h2>Обраний догляд</h2>
+                    <p class="muted">Засоби, які допоможуть створити комфортну рутину.</p>
+                </div>
+                <a href="#catalog" class="text-link">Усі товари ↗</a>
+            </div>
+            <div class="catalog-tools">
+                <label class="search-box">⌕ <input id="searchInput" placeholder="Пошук за назвою або брендом…"></label>
+                <select id="categoryFilter">
+                    <option value="all">Усі категорії</option>
+                </select>
+                <select id="sortFilter">
+                    <option value="popular">Рекомендовані</option>
+                    <option value="low">Спочатку дешевші</option>
+                    <option value="high">Спочатку дорожчі</option>
+                </select>
+            </div>
+            <div class="product-grid" id="productGrid"></div>
+        </section>
+
+        <section class="editorial" id="about">
+            <div class="editorial-image">
+                <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=1000" alt="Засоби догляду за шкірою">
+            </div>
+            <div>
+                <p class="eyebrow">OUR PHILOSOPHY</p>
+                <h2>Краса починається<br><i>з турботи</i></h2>
+                <p>Ми створили K-Beauty Space як затишний простір, де легко знайти засоби для власного ритуалу догляду. Тут важливі не складні обіцянки, а уважність до потреб шкіри, послідовність і задоволення від маленьких щоденних кроків.</p>
+                <a class="text-link" href="#care">Дізнатися більше ↗</a>
+            </div>
+        </section>
+
+        <section class="routine" id="care">
+            <p class="eyebrow">A SIMPLE ROUTINE</p>
+            <h2>Три кроки до своєї рутини</h2>
+            <div class="routine-grid">
+                <article>
+                    <span>01</span>
+                    <h3>Очищення</h3>
+                    <p>Почни з м'якого очищення, щоб підготувати шкіру до наступних етапів.</p>
+                </article>
+                <article>
+                    <span>02</span>
+                    <h3>Зволоження</h3>
+                    <p>Додай тонер або сироватку відповідно до потреб своєї шкіри.</p>
+                </article>
+                <article>
+                    <span>03</span>
+                    <h3>Захист</h3>
+                    <p>Завершуй ранковий догляд сонцезахисним засобом SPF.</p>
+                </article>
+            </div>
+            <p class="routine-disclaimer">Поради мають загальний інформаційний характер. Підбирай засоби з урахуванням індивідуальних особливостей шкіри.</p>
+        </section>
+
+        <section class="newsletter">
+            <div>
+                <p class="eyebrow">A LITTLE NOTE FOR YOU</p>
+                <h2>Турбота — у деталях</h2>
+                <p>Залишайся на зв'язку з K-Beauty Space та першою дізнавайся про новинки й пропозиції.</p>
+            </div>
+            <form id="newsletterForm">
+                <input type="email" placeholder="Твоя електронна пошта" required>
+                <button class="button button-dark">Підписатися ↗</button>
+                <small>Демонстраційна форма: підписка не надсилається на сервер.</small>
+            </form>
+        </section>
+
+        <section class="contact-section" id="contacts">
+            <div>
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2>Ми на зв'язку</h2>
+                <p class="muted">Допоможемо зорієнтуватися в асортименті та оформленні замовлення.</p>
+            </div>
+            <div class="contact-details">
+                <a href="tel:+380964445435">+380 96 444 54 35</a>
+                <span>Київ, Україна · Онлайн-магазин</span>
+                <span>Пн–Пт 09:00–18:00<br>Сб–Нд 10:00–16:00</span>
+                <div class="socials">
+                    <a href="https://www.instagram.com/kbeautyspace/" target="_blank" rel="noopener">Instagram ↗</a>
+                    <a href="https://www.tiktok.com/@kbeautyspace" target="_blank" rel="noopener">TikTok ↗</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <a class="brand" href="#">
+                <span class="brand-mark">K</span>
+                <span>K-BEAUTY <em>SPACE</em><small>YOUR SKIN, YOUR SPACE</small></span>
+            </a>
+            <p>Створи власний ритуал турботи.</p>
+            <a href="#catalog">До каталогу ↑</a>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 K-Beauty Space. Усі права захищено.</span>
+            <span>Розробник: Валерія Шестерикова | 2026</span>
+        </div>
+    </footer>
+
+    <div class="overlay" id="cartOverlay"></div>
+
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="drawer-head">
+            <h2>Твій кошик</h2>
+            <button id="closeCart" aria-label="Закрити">×</button>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-bottom">
+            <div class="total-line">
+                <span>Разом</span>
+                <b id="cartTotal">0 ₴</b>
+            </div>
+            <button class="button button-dark full" id="checkoutBtn">Оформити замовлення</button>
+            <small>Демонстраційне оформлення. Замовлення не передається продавцю.</small>
+        </div>
+    </aside>
+
+    <div class="modal" id="checkoutModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeCheckout">×</button>
+            <p class="eyebrow">JUST A FEW DETAILS</p>
+            <h2>Оформлення замовлення</h2>
+            <form id="checkoutForm">
+                <input name="name" placeholder="Ім'я та прізвище" required>
+                <input name="phone" placeholder="Номер телефону" required>
+                <input name="city" placeholder="Місто отримання" required>
+                <input name="branch" placeholder="Номер відділення / поштомата Нової пошти" required>
+                <select name="payment">
+                    <option>Післяплата</option>
+                    <option>Оплата карткою (підключається окремо)</option>
+                    <option>Переказ на IBAN (реквізити надаються продавцем)</option>
+                </select>
+                <button class="button button-dark full">Підтвердити демонстраційне замовлення</button>
+            </form>
+            <p class="fine-print">Це демонстраційна версія: дані форми не відправляються та не зберігаються на сервері.</p>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
